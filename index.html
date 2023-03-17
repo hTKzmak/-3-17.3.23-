@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КТ3</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <!-- ПЕРВАЯ ЧАСТЬ -->
+    <section>
+        <form action="" method="get">
+            <table>
+                <tr>
+                    <td><label>Наименование банка</label></td>
+                    <td>
+                        <div><input type="radio" name="company" value="sber" data-logo="./img/sberbank.png">Сбербанк
+                        </div>
+
+                        <div><input type="radio" name="company" value="tinkoff" checked
+                                data-logo="./img/thinkoff.png">Тинькофф
+                        </div>
+
+                        <div><input type="radio" name="company" value="vtb" data-logo="./img/vtb.png">ВТБ</div>
+
+                        <div><input type="radio" name="company" value="alfa-bank" data-logo="./img/alfa-bank.png">Альфа
+                            банк</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Имя и фамилия владельца карты</td>
+                    <td><input type="text" name="user" placeholder="Имя и фамилия" required></td>
+                </tr>
+                <tr>
+                    <td>Номер карты</td>
+                    <td><input type="text" name="numbers" placeholder="0000 0000 0000 0000" minlength="19"
+                            maxlength="19" required></td>
+                </tr>
+                <tr>
+                    <td>Срок действия карты</td>
+                    <td><input type="text" name="validity" placeholder="00/00" minlength="5" maxlength="5" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Платёжная система</td>
+                    <td>
+                        <div><input type="radio" name="system" value="Visa" ckecked data-image="./img/Visa.png">Visa
+                        </div>
+
+                        <div><input type="radio" name="system" value="Mastercard"
+                                data-image="./img/Mastercard.png">Mastercard</div>
+
+                        <div><input type="radio" name="system" value="Mir" data-image="./img/Mir.png">Мир</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Подтвердить"></td>
+                </tr>
+            </table>
+        </form>
+        <div class="card-visual"></div>
+    </section>
+    <!-- ВТОРАЯ ЧАСТЬ -->
+    <br>
+    <table id="table">
+        <tr>
+            <th>Наименование банка</th>
+            <th>ФИО владелица</th>
+            <th>Номер карты</th>
+            <th>Срок действия карты</th>
+            <th>Платёжная система</th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>

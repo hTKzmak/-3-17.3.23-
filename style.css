@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(34, 34, 34);
+    color: whitesmoke;
+    max-width: 800px;
+    margin: 15px auto;
+    font-family: sans-serif;
+}
+
+#table td,
+#table th {
+    border: 2px solid whitesmoke;
+    padding: 10px;
+    text-align: center;
+}
+
+section{
+    display: flex;
+    gap: 53px;
+    margin-top: 200px;
+}
+
+form{
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.card-visual{
+    background: rgb(61,61,61);
+    background: linear-gradient(to right, #282828, #000000); 
+    border: 3px solid black;
+    width: 324px;
+    height: 176px;
+    border-radius: 10px;
+    color: white;
+}
